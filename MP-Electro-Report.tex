@@ -1,12 +1,25 @@
-\documentclass{book}
+\documentclass[oneside]{book}% openany
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{mathpazo}
-\usepackage{url}
-\usepackage{epigraph} 
+\usepackage{epigraph}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{here}
+\usepackage{array}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
 \usepackage{tcolorbox}
 \input{Includes/tcolorbox.tex}
 
@@ -18,6 +31,11 @@
   \input{Chaps/Remerciments.tex}
   \mainmatter
   \input{Chaps/intro.tex}
+  \input{Chaps/solution.tex}
+  \appendix
+  \input{Chaps/AD8232datasheet.tex}
+  \input{Chaps/codesource.tex}
+  \input{Chaps/Output.tex}
   %\chapter{Conception}
   %\section{Mise en cadre du projet}
   %\chapter{Réalisation}
