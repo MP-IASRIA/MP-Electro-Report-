@@ -1,4 +1,4 @@
-\documentclass{report}
+\documentclass{book}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
@@ -6,10 +6,15 @@
 \usepackage{tabularx}
 \usepackage{mathpazo}
 \usepackage{url}
+\usepackage{epigraph} 
 
 \begin{document}
   \input{Chaps/CoverPage.tex}
-  \input{Chaps/intro.tex}
-  \bibliographystyle{plain}
-  \bibliography{Bibs/mybib.bib}
+  \frontmatter
+  \tableofcontents
+  \input{Chaps/Remerciments.tex}
+  \mainmatter
+  \chapter{Conception}
+  \section{Mise en cadre du projet}
+  \chapter{Réalisation}
 \end{document}
