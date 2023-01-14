@@ -7,14 +7,18 @@
 \usepackage{mathpazo}
 \usepackage{url}
 \usepackage{epigraph} 
+\usepackage{tcolorbox}
+\input{Includes/tcolorbox.tex}
+
 
 \begin{document}
   \input{Chaps/CoverPage.tex}
   \frontmatter
-  \tableofcontents
+  %\tableofcontents
   \input{Chaps/Remerciments.tex}
   \mainmatter
-  \chapter{Conception}
-  \section{Mise en cadre du projet}
-  \chapter{Réalisation}
+  \input{Chaps/intro.tex}
+  %\chapter{Conception}
+  %\section{Mise en cadre du projet}
+  %\chapter{Réalisation}
 \end{document}
