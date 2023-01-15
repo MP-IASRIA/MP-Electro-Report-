@@ -1,0 +1,7 @@
+\subsection{Programmation de l'ESP32}
+Le programme détaillé est présent dans l'annexe \ref{codesource}. Nous pouvons énumérer les principales étapes suivantes :
+\begin{enumerate}
+  \item importation des bibliothèques nécessaires. Il faut souligner une installation au préalable des deux bibliothèques \mintinline{c++}{PubSubClient} et \mintinline{c++}{NTPClient}. Comme nous utilisons PlatformIO pour programmer le circuit, il faut mettre à jour le ficher plateforme.ini.
+  \item donner les paramètres d'accès au réseau WIFI, au serveur MQTT et à la plateforme ubidots.
+  \item maintenant, en boucle, collecter 4 lectures avec une période de $150 ms$ et les communiquer à la plateforme ubidots.
+\end{enumerate} 
